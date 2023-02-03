@@ -31,6 +31,10 @@ ul {
 
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 112px;
+  height: 80px;
 }
 
 .logo-img {
@@ -39,14 +43,34 @@ ul {
 
 .logo-container {
   display: flex;
+  align-items: flex-end;
+  gap: 12px;
 }
 
 .nav-desktop__links {
   display: flex;
+  gap: 50px;
+}
+
+.nav-desktop__link a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contact-link {
+  color: #eb0165;
 }
 
 .hamburger-icon {
   display: none;
+}
+
+.logo-text {
+  color: #eb0165;
+}
+.logo-text-span {
+  font-style: italic;
 }
 
 .hero-container {
