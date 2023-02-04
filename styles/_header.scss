@@ -4,6 +4,12 @@
   align-items: center;
   padding: 30px 112px;
   height: 80px;
+  @media (min-width: $tablet-mini) and (max-width: $tablet-max) {
+    padding: 30px 32px;
+  }
+  @media (max-width: $mobile-max) {
+    padding: 30px 15px;
+  }
 }
 
 .logo-img {
@@ -14,17 +20,26 @@
   display: flex;
   align-items: flex-end;
   gap: 12px;
+  @media (max-width: $mobile-max) {
+    gap: 8px;
+  }
+  @media (min-width: $big-desktop-mini) {
+    align-items: center;
+  }
 }
 
 .nav-desktop__links {
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
 }
 
 .nav-desktop__link a {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  @media (min-width: $big-desktop-mini) {
+    font-size: 28px;
+  }
 }
 
 .contact-link {
@@ -33,11 +48,28 @@
 
 .hamburger-icon {
   display: none;
+  font-size: 32px;
+  padding-top: 3px;
+  @media (max-width: $mobile-max) {
+    display: block;
+  }
 }
 
 .logo-text {
   color: $primary;
+  letter-spacing: 0;
   &-span {
     font-style: italic;
+  }
+  @media (min-width: $big-desktop-mini) {
+    font-size: 3rem;
+  }
+}
+
+.nav-desktop {
+  width: 60%;
+  padding-top: 10px;
+  @media (max-width: $mobile-max) {
+    display: none;
   }
 }

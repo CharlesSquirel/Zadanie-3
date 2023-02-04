@@ -16,7 +16,8 @@ a {
   color: inherit;
 }
 
-img {
+img,
+i {
   width: 100%;
   height: 100%;
 }
@@ -32,3 +33,8 @@ ul {
 $primary: #eb0165;
 $blue: #0165eb;
 $green: #65eb01;
+$mobile-max: 767px;
+$tablet-mini: 768px;
+$tablet-max: 1200px;
+$desktop-mini: 1201px;
+$big-desktop-mini: 1441px;
