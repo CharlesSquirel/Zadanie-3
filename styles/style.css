@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Work Sans", sans-serif;
 }
 
 a,
@@ -77,7 +76,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  padding: 5px 10px;
+  padding: 5px;
   border-radius: 15px;
   transition: all 0.2s ease-in-out;
 }
@@ -134,14 +133,98 @@ ul {
   position: relative;
 }
 
-.hero-slider-panel {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.hero-text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 44px;
+  font-family: "Caveat", cursive;
 }
 
-.hero-text {
+.hero-text-box {
+  display: flex;
+  align-items: center;
   position: absolute;
-  top: 0;
+  bottom: 4px;
   left: 0;
+  width: 50%;
+  height: 130px;
+  padding-left: 32px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #3c3b3b;
+}
+
+.hero-slider-panel {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 130px;
+  background-color: #eb0165;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Caveat", cursive;
+  padding-top: 10px;
+}
+.hero-slider-panel__heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+}
+.hero-slider-panel__location {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 23px;
+}
+
+.hero-slider-panel__navigation {
+  display: flex;
+  width: 100%;
+}
+
+.hero-slider-panel__back-box,
+.hero-slider-panel__next-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #3c3b3b;
+  width: 50%;
+  height: 40px;
+  transition: all 0.2s ease-in-out;
+}
+.hero-slider-panel__back-box:first-child,
+.hero-slider-panel__next-box:first-child {
+  border-right: 2px solid #fff;
+  border-bottom-left-radius: 30px;
+}
+.hero-slider-panel__back-box:last-child,
+.hero-slider-panel__next-box:last-child {
+  border-bottom-right-radius: 30px;
+}
+.hero-slider-panel__back-box:hover,
+.hero-slider-panel__next-box:hover {
+  cursor: pointer;
+}
+
+.hero-slider-panel__navigation-text,
+.arrow-icon {
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.hero-slider-panel__navigation-text {
+  padding-bottom: 7px;
+}
+.hero-slider-panel__navigation-text:hover {
+  opacity: 0.9;
+  font-size: 27px;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
