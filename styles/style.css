@@ -228,6 +228,14 @@ ul {
   font-size: 27px;
 }
 
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
 body {
   font-family: "Work Sans", sans-serif;
 }/*# sourceMappingURL=style.css.map */
