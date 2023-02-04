@@ -2,9 +2,6 @@
   position: relative;
 }
 
-.hero-slider-panel {
-}
-
 .hero-text {
   color: $white;
   font-weight: 600;
@@ -80,13 +77,15 @@
   }
 }
 
-.hero-slider-panel__navigation-text,
+.hero-slider-panel__navigation-text-back,
+.hero-slider-panel__navigation-text-next,
 .arrow-icon {
   font-weight: 400;
   font-size: 26px;
 }
 
-.hero-slider-panel__navigation-text {
+.hero-slider-panel__navigation-text-back,
+.hero-slider-panel__navigation-text-next {
   padding-bottom: 7px;
   &:hover {
     opacity: 0.9;

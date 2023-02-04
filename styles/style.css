@@ -211,16 +211,19 @@ ul {
   cursor: pointer;
 }
 
-.hero-slider-panel__navigation-text,
+.hero-slider-panel__navigation-text-back,
+.hero-slider-panel__navigation-text-next,
 .arrow-icon {
   font-weight: 400;
   font-size: 26px;
 }
 
-.hero-slider-panel__navigation-text {
+.hero-slider-panel__navigation-text-back,
+.hero-slider-panel__navigation-text-next {
   padding-bottom: 7px;
 }
-.hero-slider-panel__navigation-text:hover {
+.hero-slider-panel__navigation-text-back:hover,
+.hero-slider-panel__navigation-text-next:hover {
   opacity: 0.9;
   font-size: 27px;
 }
