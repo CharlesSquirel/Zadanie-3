@@ -37,8 +37,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
   @media (min-width: $big-desktop-mini) {
     font-size: 28px;
+  }
+  &:hover {
+    opacity: 0.65;
+    background-color: $primary;
+    color: $white;
   }
 }
 
