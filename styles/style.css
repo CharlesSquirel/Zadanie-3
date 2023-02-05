@@ -134,11 +134,11 @@ ul {
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: -5000px;
+  left: -4000px;
   width: 100%;
   height: 100vh;
   z-index: 1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .nav-mobile__links {
   display: flex;
@@ -219,7 +219,7 @@ ul {
 
 .hero-slider-panel {
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   right: 0;
   display: flex;
   flex-direction: column;

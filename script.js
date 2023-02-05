@@ -5,7 +5,6 @@ const hamburger = document.querySelector(".hamburger");
 const navMobile = document.querySelector(".nav-mobile");
 const closeBtn = document.querySelector(".close");
 const buttons = [].concat(hamburger, closeBtn);
-console.log(buttons);
 
 // SLIDER
 // kontrola napisu na panelu
@@ -34,7 +33,7 @@ slajderNav.forEach((e) => e.addEventListener("click", handleClick));
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     let className = e.target.className;
-    console.log(className);
-    navMobile.style.left = className.includes("hamburger") ? "0" : "-5000px";
+    navMobile.style.left = className.includes("hamburger") ? "0" : "-4000px";
+    document.querySelector("body").style.overflow = className.includes("hamburger") ? "hidden" : "visible";
   });
 });
