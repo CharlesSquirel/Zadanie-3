@@ -1,6 +1,11 @@
 // DOM
 const slajderNav = document.querySelectorAll(".hero-slider-panel__navigation");
 const projectName = document.querySelector(".hero-slider-panel__location");
+const hamburger = document.querySelector(".hamburger");
+const navMobile = document.querySelector(".nav-mobile");
+const closeBtn = document.querySelector(".close");
+const buttons = [].concat(hamburger, closeBtn);
+console.log(buttons);
 
 // SLIDER
 // kontrola napisu na panelu
@@ -22,5 +27,14 @@ const handleClick = (e) => {
   nextImg.classList.remove("hidden");
   handleTextSlider(nextImg);
 };
-
+// nasłuchiwanie
 slajderNav.forEach((e) => e.addEventListener("click", handleClick));
+
+// NAV MOBILE
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    let className = e.target.className;
+    console.log(className);
+    navMobile.style.left = className.includes("hamburger") ? "0" : "-5000px";
+  });
+});

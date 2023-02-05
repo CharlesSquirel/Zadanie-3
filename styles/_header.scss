@@ -81,3 +81,33 @@
     display: none;
   }
 }
+
+.nav-mobile {
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  left: -5000px;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 50px 10px 10px 10px;
+    gap: 100px;
+  }
+  &__link a {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 21px;
+  }
+}
+.close-icon {
+  position: absolute;
+  top: 22px;
+  right: 19px;
+  font-size: 34px;
+}

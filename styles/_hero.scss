@@ -2,25 +2,48 @@
   position: relative;
 }
 
+.hero-slider {
+  height: 85vh;
+  @media (max-width: $mobile-max) {
+    height: 90vh;
+  }
+}
+
+.hero-slider img {
+  @media (max-width: $mobile-max) {
+    object-position: center;
+  }
+}
+
 .hero-text {
   color: $white;
   font-weight: 600;
   font-size: 44px;
   font-family: "Caveat", cursive;
+  @media (min-width: $big-desktop-mini) {
+    font-size: 52px;
+  }
 }
 
 .hero-text-box {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 4px;
+  bottom: 0;
   left: 0;
   width: 50%;
   height: 130px;
-  padding-left: 32px;
+  padding: 0 10px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   background-color: $gray;
+  @media (min-width: $big-desktop-mini) {
+    height: 170px;
+    padding-left: 15px;
+  }
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .hero-slider-panel {
@@ -42,11 +65,23 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 28px;
+    @media (min-width: $big-desktop-mini) {
+      font-size: 46px;
+    }
   }
   &__location {
     font-weight: 700;
     font-size: 30px;
     line-height: 23px;
+    @media (min-width: $big-desktop-mini) {
+      font-size: 34px;
+    }
+  }
+  @media (min-width: $big-desktop-mini) {
+    height: 170px;
+  }
+  @media (max-width: $mobile-max) {
+    width: 100%;
   }
 }
 
@@ -75,6 +110,9 @@
   &:hover {
     cursor: pointer;
   }
+  @media (min-width: $big-desktop-mini) {
+    height: 68px;
+  }
 }
 
 .hero-slider-panel__navigation-text-back,
@@ -82,6 +120,9 @@
 .arrow-icon {
   font-weight: 400;
   font-size: 26px;
+  @media (min-width: $big-desktop-mini) {
+    font-size: 32px;
+  }
 }
 
 .hero-slider-panel__navigation-text-back,
