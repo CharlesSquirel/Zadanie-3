@@ -201,8 +201,7 @@ ul {
   width: 50%;
   height: 130px;
   padding: 0 10px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 30px;
   background-color: #3c3b3b;
 }
 @media (min-width: 1441px) {
