@@ -228,11 +228,7 @@ ul {
   font-size: 27px;
 }
 
-.active {
-  display: block;
-}
-
-.inactive {
+.hidden {
   display: none;
 }
 

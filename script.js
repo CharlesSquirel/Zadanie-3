@@ -1,18 +1,26 @@
 // DOM
 const slajderNav = document.querySelectorAll(".hero-slider-panel__navigation");
-const img1 = document.querySelector(".hero-img1");
-const img2 = document.querySelector(".hero-img2");
+const projectName = document.querySelector(".hero-slider-panel__location");
 
+// SLIDER
+// kontrola napisu na panelu
+const handleTextSlider = (img) => {
+  let className = img.className;
+  projectName.textContent = className.includes("slide-first") ? "Projekt w miejscu 1" : className.includes("slide-middle") ? "Projekt w miejscu 2" : "Projekt w miejscu 3";
+};
+// obsługa zmiany zdjęć
 const handleClick = (e) => {
-  if (e.target.className.includes("back")) {
-  } else if (e.target.className.includes("next")) {
-    if (img1.className.includes("active")) {
-      img1.classList.remove("active");
-      img1.classList.add("inactive");
-      img2.classList.remove("inactive");
-      img2.classList.add("active");
-    }
+  let currentImg = document.querySelector(".hero-img:not(.hidden)");
+  let className = e.target.className;
+  let nextImg;
+  currentImg.classList.add("hidden");
+  if (className.includes("back")) {
+    nextImg = currentImg.previousElementSibling || document.querySelector(".slide-last");
+  } else if (className.includes("next")) {
+    nextImg = currentImg.nextElementSibling || document.querySelector(".slide-first");
   }
+  nextImg.classList.remove("hidden");
+  handleTextSlider(nextImg);
 };
 
 slajderNav.forEach((e) => e.addEventListener("click", handleClick));
