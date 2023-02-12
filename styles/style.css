@@ -294,7 +294,7 @@ ul {
 }
 @media (min-width: 1441px) {
   .hero-slider-panel__back-box,
-.hero-slider-panel__next-box {
+  .hero-slider-panel__next-box {
     height: 68px;
   }
 }
@@ -307,8 +307,8 @@ ul {
 }
 @media (min-width: 1441px) {
   .hero-slider-panel__navigation-text-back,
-.hero-slider-panel__navigation-text-next,
-.arrow-icon {
+  .hero-slider-panel__navigation-text-next,
+  .arrow-icon {
     font-size: 32px;
   }
 }
